@@ -159,10 +159,11 @@ a {
 }
 
 .health {
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 36px 36px 0 0;
-  padding: clamp(2rem, 6vw, 4rem);
-  box-shadow: 0 -24px 48px rgba(15, 12, 10, 0.12);
+  margin-top: clamp(3rem, 9vw, 5rem);
+  background: #fff;
+  border-radius: 0;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(2rem, 6vw, 4rem);
+  box-shadow: 0 18px 42px rgba(15, 12, 10, 0.1);
 }
 
 .health-grid {
@@ -189,6 +190,28 @@ a {
   margin-top: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
+}
+
+.landing-main .vendors {
+  margin-top: clamp(2.5rem, 8vw, 4.5rem);
+  padding: 0 clamp(0.5rem, 4vw, 1.5rem) clamp(2rem, 6vw, 3rem);
+  text-align: center;
+  background: radial-gradient(circle at top, rgba(255, 246, 220, 0.9), rgba(255, 210, 110, 0));
+  border-radius: 0 0 28px 28px;
+}
+
+.landing-main .vendors p {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.landing-main .socials {
+  margin-top: clamp(3rem, 9vw, 5rem);
+  padding: clamp(2rem, 6vw, 3.5rem) clamp(1rem, 5vw, 2.5rem) clamp(3rem, 7vw, 4rem);
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 32px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 18px 42px rgba(15, 12, 10, 0.16);
 }
 
 .subpage-hero {
