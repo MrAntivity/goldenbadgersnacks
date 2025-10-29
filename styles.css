@@ -29,6 +29,36 @@ a {
   text-decoration: none;
 }
 
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--charcoal);
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(15, 12, 10, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus-visible {
+  transform: translateY(-4px);
+  background: var(--gold-deep);
+  box-shadow: 0 18px 30px rgba(15, 12, 10, 0.2);
+}
+
 .landing-body {
   min-height: 100vh;
   display: flex;
@@ -178,20 +208,6 @@ a {
 .subpage-hero p {
   max-width: 640px;
   margin: 0 auto;
-}
-
-.back-home {
-  position: absolute;
-  top: clamp(1rem, 2.5vw, 1.8rem);
-  left: clamp(1rem, 4vw, 2rem);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-.back-home:hover,
-.back-home:focus-visible {
-  color: var(--gold-deep);
 }
 
 .subpage-main {
@@ -413,12 +429,6 @@ a {
   .landing-badge {
     width: 130px;
     height: 130px;
-  }
-
-  .back-home {
-    position: static;
-    display: inline-block;
-    margin-bottom: 1rem;
   }
 
   .product-feature {
