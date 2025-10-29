@@ -5,6 +5,7 @@
   --charcoal: #1f1b16;
   --off-black: #0f0c0a;
   --soft-white: #fffef5;
+  --story-hero-gradient: radial-gradient(circle at top, rgba(255, 235, 167, 0.9), rgba(255, 255, 255, 0.75));
 }
 
 * {
@@ -63,6 +64,7 @@ a {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--story-hero-gradient);
 }
 
 .landing {
@@ -217,7 +219,7 @@ a {
 .subpage-hero {
   padding: clamp(2.5rem, 6vw, 4rem) clamp(1.5rem, 5vw, 4rem);
   text-align: center;
-  background: radial-gradient(circle at top, rgba(255, 235, 167, 0.9), rgba(255, 255, 255, 0.75));
+  background: var(--story-hero-gradient);
   position: relative;
 }
 
